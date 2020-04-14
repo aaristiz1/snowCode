@@ -1,0 +1,34 @@
+.customButtom {
+    background-color: Transparent !important;
+    background-repeat:no-repeat !important;
+    border: none !important;
+    cursor :pointer !important;
+    overflow: hidden !important;
+    outline:none !important;
+}
+
+.customLabel {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.customIcon {
+    color: #428bca;
+}
+
+i:hover {
+    color: #094697;
+}
+
+.buttonContainer {
+    margin-bottom: 15px;
+}
+
+.m-r-md{
+    margin-right: 5px;
+}
