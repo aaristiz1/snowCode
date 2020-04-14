@@ -1,0 +1,31 @@
+<div>
+  <div id="formButtons" class="buttonContainer">
+      <button type="submit" class="btn btn-primary m-r-md" ng-click="c.sendData()">Add User</button>
+      <button type="submit" class="btn btn-default" ng-click="c.removeAll()">Remove All</button>      
+  </div>
+
+  <div class="table-responsive">          
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Employee</th>
+          <th>Move Date</th>          
+          <th>To Home Base</th>
+          <th>To Floor</th>
+          <th>To Workspace</th>
+        </tr>
+      </thead>
+      <tbody ng-if="c.showRow">
+        <tr ng-repeat="user in c.obj">
+          <td><button class="customButtom" ng-click="c.removeUser(user.employee)"><i class="fa fa-times customIcon" aria-hidden="true"></i> </button></td>
+          <td>{{user.userName}}</td>
+          <td>{{user.employee_requested_move_date}}</td>
+          <td>{{user.homeBase}}</td>
+          <td>{{user.floor}}</td>
+          <td>{{user.space}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+</div>
